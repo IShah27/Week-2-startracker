@@ -11,7 +11,9 @@ console.log("OMG JAVASCRIPT");
 			$(this).val('show')
 		}
 	})
-	$("<input type='button' id='toggleButton' value='toggle'/>").insertAfter('#disclaimer')
+	$("<input type='button' id='toggleButton' value='toggle'/>").insertAfter("#disclaimer")
 	$("#toggleButton").click(function(){
-		$("#disclaimer").fadeOut("20000");
-	})
+		$("#disclaimer").toggle();
+	});
+
+});
